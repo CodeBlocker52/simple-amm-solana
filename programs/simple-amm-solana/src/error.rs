@@ -4,6 +4,11 @@ use anchor_lang::prelude::*;
 pub enum AmmErrorCode{
     #[msg("Invalid fee")]
     InvalidFee,
+      #[msg("Insufficient balance")]
+    InsufficientBalance,
+    Overflow,
+    InvalidParams,
+    ZeroAmount,
 }
 
 
